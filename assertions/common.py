@@ -58,7 +58,6 @@ def validate_floats(
 def get_rounding_permutations(target: int | float, dp: Decimal) -> list[Decimal]:
     raw = Decimal(target)
     buffer = []
-    buffer.append(raw)
     # buffer.append(raw.quantize(dp, rounding=ROUND_CEILING))
     # buffer.append(raw.quantize(dp, rounding=ROUND_FLOOR))
     # buffer.append(raw.quantize(dp, rounding=ROUND_UP))
